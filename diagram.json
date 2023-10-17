@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "Abubaker Siddique H",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 16.2, "left": -16.4, "attrs": {} },
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 4.7, "left": -129.8, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -47.7, "left": 23.4, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "bb1:4t.e", "esp:3V3", "red", [ "v9.6", "h-48", "v48" ] ],
+    [ "esp:GND.1", "bb1:7b.h", "magenta", [ "h0" ] ],
+    [ "bb1:7t.e", "bb1:7b.h", "magenta", [ "v0" ] ],
+    [ "esp:D15", "bb1:5t.e", "green", [ "h0" ] ],
+    [ "dht1:VCC", "bb1:4t.a", "", [ "$bb" ] ],
+    [ "dht1:SDA", "bb1:5t.a", "", [ "$bb" ] ],
+    [ "dht1:NC", "bb1:6t.a", "", [ "$bb" ] ],
+    [ "dht1:GND", "bb1:7t.a", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
