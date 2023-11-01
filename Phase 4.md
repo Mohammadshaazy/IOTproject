@@ -98,4 +98,4 @@ void loop() {
 
 ## Result
 
-![Image](Result.png)
+![Image](Result.jpg)
