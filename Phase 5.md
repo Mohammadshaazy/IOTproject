@@ -79,7 +79,7 @@ void loop() {
 ![Image](Phase_3/Image.png)
 
 ### Results:
-![Image](Result.png)
+![Image](Result.jpg)
 
 
 ## Project Output
