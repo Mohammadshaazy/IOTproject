@@ -1,4 +1,4 @@
-﻿# Phase 5: Project Summary - IoT-Based Environmental Monitoring
+# Phase 5: Project Summary - IoT-Based Environmental Monitoring
 
 ## Project Overview
 
@@ -45,7 +45,7 @@ void setup() {
 }
 
 void loop() {
- 
+
   delay(2000);
 
   float h = dht.readHumidity();
@@ -75,10 +75,10 @@ void loop() {
 }
 ```
 
-**Simulated Images:**
-- ![Image](Phase_3/Image.png)
+### Simulated Images:
+![Image](Phase_3/Image.png)
 
-**Results**
+### Results:
 ![Image](Result.png)
 
 
